@@ -20,6 +20,7 @@ do
   Console.WriteLine("2) Add category");
   Console.WriteLine("3) Display Category and related products");
    Console.WriteLine("4) Display all Categories and their related products");
+    Console.WriteLine("5) Delete Blog");
   Console.WriteLine("Enter to quit");
   string? choice = Console.ReadLine();
   Console.Clear();
@@ -113,9 +114,23 @@ do
       }
     }
   }
+else if (choice == "5")
+  {
+    // delete blog
+    Console.WriteLine("Choose the blog to delete:");
+  }
+
+else if (choice == "5")
+  {
+    // delete blog
+    Console.WriteLine("Choose the blog to delete:");
+  }
+
+
   else if (String.IsNullOrEmpty(choice))
   {
     break;
   }
   Console.WriteLine();
 } while (true);
+
